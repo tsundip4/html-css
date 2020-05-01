@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style type="text/css">
+		body{
+			background-image: url("1 (79).jpg");
+			background-size: cover;
+			background-attachment: fixed;
+			position: relative;
+
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.top{
+			text-align: center;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			font-size: 30px;
+			color: white;
+			justify-content: center;
+
+
+
+		}
+		.whole{
+			display: flex;
+			background-color: darkgrey;
+			flex-direction: column;
+			width: 720px;
+			color: white;
+			flex-wrap: wrap;
+			margin: 300px;
+			margin-top: 0px;
+			position: absolute;
+			border-radius: 10px;
+
+		}
+
+		.name input{
+			width: 600px;
+			border-radius: 5px;
+			padding: 10px;
+			font-size: 20px;
+		}
+		#for{
+			width: 600px;
+			border-radius: 5px;
+			padding: 10px;
+		}
+
+		.big{
+			width: 1.5em;
+			height: 1.5em;
+		}
+
+		@media only screen and (max-width: 920px){
+			body{
+				width:100%;
+
+			}
+			.whole{
+				position: absolute;
+				width: 100%;
+			}
+
+		}
+		
+	</style>
+	
+</head>
+<body>
+	
+	<div class="top" ><h2>Survey form</h2>
+		<p style="font-size: 20px;">Thank you for participation</p>
+	</div><br><br>
+	<div class="whole"><br>
+	<div class="name" style="margin-left: 60px;"><label style="font-size: 20px; font-family: arial; padding-top: 30px;">Name</label><br>
+		<input type="text" name="name" placeholder="Enter your full name">
+	</div><br><br>
+	<div class="name" style="margin-left: 60px;"><label style="font-size: 20px; font-family: arial;">Email</label><br>
+		<input type="text" name="name" placeholder="Your Email">
+	</div><br><br>
+	<div class="name"  style="margin-left: 60px;"><label style="font-size: 20px; font-family: arial;">Age(optional)</label><br>
+		<input type="number" name="name" placeholder="Your age">
+	</div><br><br>
+	<div class="name" style="margin-left: 60px;" ><label style="font-size: 20px; font-family: arial; ">Which option describes the current role of yours?</label><br>
+		<select id="for" style="font-size: 20px;">
+
+			<option style="font-size: 20px;">student</option>
+			<option style="font-size: 20px;">programmer</option>
+			<option style="font-size: 20px;">labour</option>
+			<option style="font-size: 20px;">prefer not to answer</option>
+		</select>
+	</div><br><br>
+
+	<div  class="radio" style="margin-left: 60px;"><label style="font-size: 20px; font-family: arial; ">which is your favorite job you like to do?</label><br>
+
+		<input type="radio" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Programming</label><br>
+		<input type="radio" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; "> Marketing</label><br>
+		<input type="radio" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Business</label><br>
+	</div><br><br>
+
+	<div  class="checkbox" style="margin-left: 60px;"><label style="font-size: 20px; font-family: arial; ">what is favorite street food?</label><br>
+
+		<input type="checkbox" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Mo:Mo</label><br>
+		<input type="checkbox" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Chowmin</label><br>
+		<input type="checkbox" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Ice cream</label><br>
+		<input type="checkbox" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">chicken chilly</label><br>
+		<input type="checkbox" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Burger</label><br>
+		<input type="checkbox" class= "big" name="opt"><label style="font-size: 20px; font-family: arial; ">Sandwich</label><br>
+
+		
+	</div><br><br>
+
+	<div style="margin-left: 60px;"><label style="font-size: 20px; font-family: arial; ">Any Message Or Comment</label><br>
+	<textarea style="width: 600px; height: 85px; font-size: 20px;" placeholder="Enter message here"></textarea><br><br>
+
+
+	<div  style="margin-right: 60px;"><h4 style="text-align: center; background-color: lightgreen; color: white; font-size: 20px; padding: 10px; cursor: pointer;">submit</h4>
+	
+	</div>
+
+
+	
+
+</div>
+	
+</body>
+</html>

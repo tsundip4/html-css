@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main-menu</title>
+	<meta name="viewport" content="width=device-width , initial scale=1.0">
+	<style type="text/css">
+
+		* {
+			box-sizing: border-box;
+		}
+		body{
+			background-image: linear-gradient(to right, blue, yellow);
+		}
+		.menu{
+			display: flex;
+			flex-direction: row;
+
+		}
+		.menu > div{
+			width: 250px;
+			line-height: 50px;
+			font-size: 18px;
+			background-color: tomato;
+			text-align: center;
+			margin:10px;
+			text-transform: uppercase;
+			color: white;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+
+		}
+		.american:hover{
+			border: 1px solid darkblue;
+		}
+
+		
+		.american{
+			position: absolute;
+			top: 72%;
+			left: 2%;
+			font-family: verdana;
+			font-size: 20px;
+			padding:8px;
+			background-color: darkorange;
+			color: white;
+			
+		}
+
+		 .khana{
+		 	display: flex;
+		 	flex-wrap: wrap;
+		 }
+		 .sideA{
+			flex:65%;
+			margin-left: 30px;
+			margin-top: 20px;
+			position: relative;
+			margin-right: 10px;
+
+		}
+		.sideB{
+			margin-top: -20px;
+
+		}
+
+		
+
+
+		 .paisa{
+			flex: 35%;
+			width: 200px;
+			height: 200px;
+			margin-right: 30px;
+			background-color: tomato;
+			text-align: center;
+			color: white;
+			font-family: verdana;
+			font-size: 20px;
+			
+		}
+
+		.pictures{
+			display: flex;
+			flex-wrap: wrap;
+			
+		}
+
+		.pic1{
+			margin: 12px;
+			position: relative;
+		}
+		.pic1ex{
+			top: 86%;
+			left: 2%;
+			position: absolute;
+			width: 150px;
+			background-color: chocolate;
+			padding-bottom: 5px;
+			text-align: center;
+			color: white;
+
+		}
+		
+		.lastpic{
+			display: flex;
+			margin-left: 30px;
+			margin-right: 30px;
+			position: relative;
+		}
+		.lastpic img{
+			height: 350px;
+			width: 1272px;
+			object-fit: cover;
+		
+
+
+
+		}
+		.momo{
+			width: 150px;
+			background-color: indianred;
+			position: absolute;
+			text-align: center;
+			padding: 7px;
+			top: 80%;
+			left: 5%;
+			color: white;
+			font-family: "Comic Sans MS", cursive, sans-serif;
+		}
+
+		@media only screen and (max-width: 920px){
+			.menu, .khana, .lastpic{
+				flex-direction: column;
+				width: 100%;
+				object-fit: cover;
+				margin-left: 10px;
+			}
+			.lastpic img{
+				width: 100%;
+			}
+			.pic1{
+				margin-left: 10px;
+				width: 100%;
+			}
+			
+			.menu div{
+				margin-left: 10px;
+				width: 100%;
+			}
+
+			.pic1 img{
+				width: 100%;
+			}
+			.paisa{
+				margin-left: 10px;
+				width: 100%;
+			}
+
+			#mar{
+				margin-left:-20px;
+
+			}
+			
+			
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="menu">
+		<div id="mar1" style="margin-left: 30px;">Tacos</div>
+		<div>Beer</div>
+		<div>Wines</div>
+		<div>Deserts</div>
+		<div style="margin-right: 30px;">Reservations</div>
+	</div>
+
+	<div class="khana">
+		<div class="sideA" style="margin-right: 10px; ">
+			<img id="mar" src="gn-gift_guide_variable_c.jpg" height="420px" width="100%" style="object-fit: cover;" >
+			<div class="american">American crispy</div>
+		</div>
+
+		<div class="sideB" >
+			<div class="paisa"><p style="font-size: 40px; padding-top: 30px;">$2.99</p><p style="font-size: 12px;">Tacos</p></div><br>
+			<div class="paisa" style="margin-top: -40px;"><p style="font-size: 40px; padding-top: 30px;">$4.99</p><p style="font-size: 12px;">Chowmin</p></div>
+		</div>
+
+		<div class="pictures">
+			<div  class="pic1" style="margin-left: 30px;"><img src="11160001-fb-rest-images-5000x33007_cover_2000x1320.jpg" height="200px" width="300px"><div class="pic1ex">friday especial</div></div>
+			<div class="pic1"><img src="gn-gift_guide_variable_c.jpg" height="200px" width="300px"><div class="pic1ex">saturday especial</div></div>
+			<div class="pic1"><img src="restaurant_2999753b.jpg" height="200px" width="300px"><div class="pic1ex">sunday especial</div></div>
+			<div class="pic1"><img src="The-Friendship.jpg" height="200px" width="300px"><div class="pic1ex">tuesday especial</div></div>
+			
+			
+		</div><br>
+
+		<div class="lastpic"><img src="momo dec 10.jpg"><div class="momo">Nepalese mo:mo</div></div>
+		
+		
+
+		
+	
+</body>
+</html>
